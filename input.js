@@ -24,6 +24,9 @@ const handleUserInput = function(key) {
     // console.log("Say: Try harder!");
     connection.write("Say: Better luck next time!")
   }
+  if (key === "n") {
+    connection.write("gg ez");
+  }
   if (key === '\u0003') {
     process.exit();
  }
@@ -31,9 +34,6 @@ const handleUserInput = function(key) {
 
 const setupInput = function (conn) {
   connection = conn;
-  // console.log("conn", conn);
-  // console.log("connection", connection);
-  // console.log("connect", connect);
   const stdin = process.stdin;
   stdin.setRawMode(true);
   stdin.setEncoding("utf8");
