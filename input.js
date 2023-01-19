@@ -5,7 +5,7 @@ const {constants} = require('./constants');
 let connection;
 
 const handleUserInput = function(key) {
-  if () {
+  if (key === "w") {
     connection.write("Move: up");
     // console.log("Move: up");
   }
