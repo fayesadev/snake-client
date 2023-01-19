@@ -1,10 +1,11 @@
 // setup interface to handle user input from stdin
 const {connect} = require('./client');
+const {constants} = require('./constants');
 // Stores the active TCP connection object.
 let connection;
 
 const handleUserInput = function(key) {
-  if (key === "w") {
+  if () {
     connection.write("Move: up");
     // console.log("Move: up");
   }
