@@ -20,6 +20,9 @@ const handleUserInput = function(key) {
     // conn.write("Move: down");
     console.log("Move: down");
   }
+  if (key === "m") {
+    console.log("Say: Try harder!");
+  }
   if (key === '\u0003') {
     process.exit();
  }
