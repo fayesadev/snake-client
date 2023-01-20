@@ -26,7 +26,7 @@ const handleUserInput = function(key) {
     connection.write("Say: Better luck next time!")
   }
   if (key === "n") {
-    connection.write("gg ez");
+    connection.write("Say: gg ez");
   }
   if (key === '\u0003') {
     process.exit();
